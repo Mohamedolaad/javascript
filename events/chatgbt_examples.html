@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Events Example</title>
+</head>
+
+<body>
+
+  <h2>JavaScript Events Examples</h2>
+
+  <!-- 1. Mouse Events -->
+  <h3>1. Mouse Events</h3>
+
+  <button onclick="sayHello()">Click Me</button>
+  <br><br>
+
+  <p onmouseover="highlight(this)">Hover over this text</p>
+
+  <!-- 2. Keyboard Events -->
+  <h3>2. Keyboard Events</h3>
+
+  <input type="text" onkeydown="showKey(event)" placeholder="Press any key">
+  <br><br>
+  <input type="text" onkeyup="showText(event)" placeholder="Type something">
+
+  <!-- 3. Form Events -->
+  <h3>3. Form Events</h3>
+
+  <form onsubmit="sendForm(event)">
+    <input type="text" required>
+    <button type="submit">Submit</button>
+  </form>
+  <br>
+
+  <select onchange="selectedValue(this)">
+    <option value="">Choose</option>
+    <option value="Car">Car</option>
+    <option value="Bike">Bike</option>
+  </select>
+
+  <!-- 4. Window Events -->
+  <h3>4. Window Events</h3>
+
+  <p>Check console for load and resize events.</p>
+
+  <!-- 5. Input Event -->
+  <h3>5. Input Event</h3>
+
+  <input type="text" oninput="update(event)" placeholder="Type to trigger input event">
+
+  <!-- 6. Touch Event (for mobile) -->
+  <h3>6. Touch Event</h3>
+
+  <div ontouchstart="touching()" style="padding:20px; background:lightgray;">
+    Touch here (mobile only)
+  </div>
+
+  <!-- 7. Focus Events -->
+  <h3>7. Focus Events</h3>
+
+  <input onfocus="focused()" placeholder="Click to focus">
+  <br><br>
+  <input onblur="lostFocus()" placeholder="Click and leave">
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    // Mouse events
+    function sayHello() {
+      alert("Button clicked!");
+    }
+
+    function highlight(element) {
+      element.style.color = "red";
+    }
+
+    // Keyboard events
+    function showKey(e) {
+      console.log("Key pressed:", e.key);
+    }
+
+    function showText(e) {
+      console.log("Current value:", e.target.value);
+    }
+
+    // Form events
+    function sendForm(e) {
+      e.preventDefault();
+      alert("Form submitted!");
+    }
+
+    function selectedValue(element) {
+      alert("You selected: " + element.value);
+    }
+
+    // Window events
+    window.onload = function() {
+      console.log("Page loaded");
+    }
+
+    window.onresize = function() {
+      console.log("Window resized");
+    }
+
+    // Input event
+    function update(e) {
+      console.log("Input:", e.target.value);
+    }
+
+    // Touch event
+    function touching() {
+      alert("Touched!");
+    }
+
+    // Focus events
+    function focused() {
+      console.log("Input focused");
+    }
+
+    function lostFocus() {
+      console.log("Input lost focus");
+    }
+
+  </script>
+
+</body>
+</html>

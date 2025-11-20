@@ -1,4 +1,4 @@
-// function girls () {
+// function girls() {
 // console.log("Girls like kindness.");
 // console.log("Girls like honesty.");
 // console.log("Girls like confidence.");
@@ -46,34 +46,35 @@
 // console.log("Boys like success.");
 // console.log("Boys like being appreciated.");
 // }
-// Boys()
+
 // girls()
+// //  Boys()
 
-// function multiply(num1, num2) {return num1 * num2
+// // function multiply(num1, num2) {return num1 * num2
 
-// }
+// // }
 
-// console.log( multiply (3, 3))
+// // console.log( multiply (3, 3))
 
-// function add (m1, m2)
-//  {return  m1 + m2 }
-// console.log (add (4, 6))
-
-
-// // halkaan waxan kuqeexiyaa function ka
-// function iskudarLabaNambar(namabrkoow, nambarlabaa) {
-//   return namabrkoow + nambarlabaa;
-// }
-// // halkaan waxan kuwacayaa function ka
-// console.log(iskudarLabaNambar(2, 4));
-
-// function iskudarlabanumbar(numberkoow, nambarlaba)
-
-// {return numberkoow + nambarlaba;}
-// console.log(iskudarlabanumbar(2, 4));
+// // function add (m1, m2)
+// //  {return  m1 + m2 }
+// // console.log (add (4, 6))
 
 
-//examples of function
-function greet(name) {
+// // // halkaan waxan kuqeexiyaa function ka
+// // function iskudarLabaNambar(namabrkoow, nambarlabaa) {
+// //   return namabrkoow + nambarlabaa;
+// // }
+// // // halkaan waxan kuwacayaa function ka
+// // console.log(iskudarLabaNambar(2, 4));
+
+// // function iskudarlabanumbar(numberkoow, nambarlaba)
+
+// // {return numberkoow + nambarlaba;}
+// // console.log(iskudarlabanumbar(2, 4));
+
+
+// //examples of function
+// // function greet(name) {
   
   

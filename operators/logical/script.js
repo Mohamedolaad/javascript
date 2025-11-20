@@ -1,11 +1,11 @@
 // let age = 20;
 // let hasID = true;
 
-// if (age >= 18 && hasID) {
+// if (age <= 18 && hasID) {
 //   console.log("Allowed to enter");
 // } else {
 //   console.log("Not allowed");
-// }
+//}
 // let age = 15
 // let hasID =true
 // if(age >= 14 && hasID) {
@@ -26,18 +26,18 @@
 
 // }
 
-// let hasPassword = false;
-// let isAdmin = true;
-
-// if (hasPassword || isAdmin) {
-//   console.log("Wi-Fi access granted");
-// } else {
-//   console.log("Access denied");
 let hasPassword = false;
 let isAdmin = true;
 
-if ( hasPassword && isAdmin) {
+if (hasPassword || isAdmin) {
   console.log("Wi-Fi access granted");
 } else {
-  console.log("Access denied");
-}
+  console.log("Access denied");}
+// let hasPassword = false;
+// let isAdmin = true;
+
+// if ( hasPassword && isAdmin) {
+//   console.log("Wi-Fi access granted");
+// } else {
+//   console.log("Access denied");
+// }
